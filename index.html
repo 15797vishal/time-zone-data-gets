@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIME ZONE API</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="heading">
+        <h1>TIME ZONE API:</h1>
+    </div>
+
+    <div class="subheading">
+        <h2 id="current">YOUR CURRENT TME ZONE IS:</h2>
+    </div>
+
+    <section class="box">
+        <p class="time">TIME ZONE: <span id="timezone"></span></p>
+        <p class="lati">LAT: <span id="lat"></span></p>
+        <p class="lon">lONG: <span id="longi"></span></p>
+        <p class="std">OFFSET STD: <span id="offstd"></span></p>
+        <p class="offset">OFFSET STD SECONDS : <span id="stdsec"></span></p>
+        <p class="dst">OFFSET DST : <span id="dsto"></span></p>
+        <p class="dstsec">OFFSET DST SECONDS: <span id="dstsec"></span></p>
+        <p class="con">COUNTRY: <span id="cont"></span></p>
+        <p class="post">POSTCODE: <span id="pin"></span></p>
+        <p class="city">CITY: <span id="cty"></span></p>
+    </section>
+
+    <section class="search">
+        <h2 class="heading2">ENTER ADDRESS HERE:</h2>
+        <input id="addinput" class="input" type="text" placeholder=" Enter Address Here.... ">
+        <button class="btn" onclick="getLocation() ">Submit</button>
+        <p style="color: white;" id="success"></p>
+    </section>
+
+    <section class="box2">
+        <p class="time1">NAME OF TIME ZONE : <span id="time"></span></p>
+        <p class="lati1">LAT: <span id="lati"></span></p>
+        <p class="lon1">lONG: <span id="lon"></span></p>
+        <p class="std1">OFFSET STD: <span id="offst"></span></p>
+        <p class="offset1">OFFSET STD SECONDS : <span id="stdse"></span></p>
+        <p class="dst1">OFFSET DST : <span id="dst"></span></p>
+        <p class="dstsec1">OFFSET DST SECONDS: <span id="dstse"></span></p>
+        <p class="con1">COUNTRY: <span id="con"></span></p>
+        <p class="post1">POSTCODE: <span id="pincod"></span></p>
+        <p class="city1">CITY: <span id="ct"></span></p>
+    </section>
+
+    <script src="./getdata.js"></script>
+</body>
+
+</html>
